@@ -18,7 +18,10 @@ module.exports = {
       defaultConfig: {
         filePattern: '**/*.{index}',
         fileIgnorePattern: null,
-        prefix: '',
+        prefix: function(context) {
+          var revisionKey = context.revisionData && context.revisionData.revisionKey;
+          return context.commandOptions.revision || revisionKey;
+        },
         profile: '',
         acl: 'public-read',
         cacheControl: 'max-age='+TWO_YEAR_CACHE_PERIOD_IN_SEC+', public',
