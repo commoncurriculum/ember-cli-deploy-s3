@@ -1,5 +1,5 @@
 {
-  "name": "ember-cli-deploy-s3",
+  "name": "ember-cli-deploy-s3-prember",
   "version": "3.0.0",
   "description": "An ember-cli-deploy plugin to upload to s3",
   "keywords": [
@@ -12,7 +12,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/ember-cli-deploy/ember-cli-deploy-s3",
+  "repository": "https://github.com/commoncurriculum/ember-cli-deploy-s3-prember",
   "scripts": {
     "release": "release-it",
     "test": "node tests/runner.js && ./node_modules/.bin/eslint index.js lib/* tests/**/*-test.js"
