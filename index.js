@@ -16,7 +16,7 @@ module.exports = {
     var DeployPlugin = DeployPluginBase.extend({
       name: options.name,
       defaultConfig: {
-        filePattern: '**/*.{index}',
+        filePattern: '**/*.{html}',
         fileIgnorePattern: null,
         prefix: function(context) {
           var revisionKey = context.revisionData && context.revisionData.revisionKey;
